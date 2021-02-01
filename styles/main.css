@@ -13,11 +13,11 @@
   --font-heading: Literata, serif;
   --font-text: 'Open Sans', sans-serif;
 
-  --border-radius: 5px;
+  --border-radius: 20px;
 
   font-family: var(--font-text);
   color: var(--black);
-  background: var(--e3e3e3);
+  background: var(--grey);
 }
 
 * {
@@ -41,6 +41,41 @@ h6 {
   font-family: var(--font-heading);
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: min-content auto;
+  border-radius: var(--border-radius);
+  background: var(--gold);
+  padding: 1rem;
+  grid-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+header div {
+  grid-column 2;
+}
+
+header img {
+  grid-column: 1;
+}
+
+header p:first-of-type {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+header span {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .all-persons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -51,7 +86,7 @@ h6 {
   display: flex;
   background: var(--green);
   padding: 20px 20px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 .left-column {
@@ -75,7 +110,8 @@ h6 {
   height: 150px;
   overflow: hidden;
   border-radius: 20px;
-  border: 1px solid black;
+  <<<<<<< HEAD=======border: 1px solid black;
+  >>>>>>>main
 }
 
 .avatar {
