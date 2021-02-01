@@ -110,12 +110,13 @@ header span {
   height: 150px;
   overflow: hidden;
   border-radius: 20px;
-  <<<<<<< HEAD=======border: 1px solid black;
-  >>>>>>>main
+ border: 1px solid black;
 }
 
 .avatar {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .right-column p {
