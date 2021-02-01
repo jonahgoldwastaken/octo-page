@@ -1,0 +1,29 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --green: #b2d6c8;
+  --gold: #e5ae2c;
+  --red: #f48b73;
+
+  --primary: var(--black);
+  --secondary: var(--gold);
+  --card-background: var(--green);
+
+  --font-heading: Literata, serif;
+  --font-text: 'Open Sans', sans-serif;
+
+  --image-border-radius: 5px;
+
+  font-family: var(--font-text);
+  color: var(--black);
+  background: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
