@@ -4,6 +4,7 @@
   --green: #b2d6c8;
   --gold: #e5ae2c;
   --red: #f48b73;
+  --grey: #e3e3e3;
 
   --primary: var(--black);
   --secondary: var(--gold);
@@ -12,11 +13,23 @@
   --font-heading: Literata, serif;
   --font-text: 'Open Sans', sans-serif;
 
-  --image-border-radius: 5px;
+  --border-radius: 5px;
 
   font-family: var(--font-text);
   color: var(--black);
+  background: var(--e3e3e3);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  max-width: 60rem;
+  margin: 0 auto;
   background: var(--white);
+  min-height: 100vh;
+  padding: 1.5rem;
 }
 
 h1,
@@ -26,4 +39,59 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+}
+
+.all-persons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.person {
+  display: flex;
+  background: var(--green);
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.socials {
+  display: flex;
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 50px;
+  height: auto;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.right-column p {
+  margin: 0;
+}
+
+p.name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p.person-title {
+  font-style: italic;
+  margin-bottom: 25px;
 }
