@@ -4,6 +4,7 @@
   --green: #b2d6c8;
   --gold: #e5ae2c;
   --red: #f48b73;
+  --grey: #e3e3e3;
 
   --primary: var(--black);
   --secondary: var(--gold);
@@ -12,24 +13,21 @@
   --font-heading: Literata, serif;
   --font-text: 'Open Sans', sans-serif;
 
-  --image-border-radius: 5px;
+  --border-radius: 5px;
 
   font-family: var(--font-text);
   color: var(--black);
+  background: var(--grey);
 }
 
 * {
   margin: 0;
 }
 
-html {
-  background: #E3E3E3;
-}
-
 body {
   max-width: 60rem;
   margin: 0 auto;
-  background: white;
+  background: var(--white);
   min-height: 100vh;
   padding: 1.5rem;
 }
@@ -49,7 +47,6 @@ h6 {
   grid-gap: 10px;
 }
 
-
 .person {
   display: flex;
   background: var(--green);
@@ -60,7 +57,7 @@ h6 {
 .left-column {
   display: flex;
   flex-direction: column;
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 .socials {
