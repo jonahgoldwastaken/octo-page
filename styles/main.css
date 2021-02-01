@@ -27,3 +27,48 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+
+.person {
+  display: flex;
+  background-color: green;
+  border-radius: .3em;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px
+}
+
+.socials {
+  display: flex;
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 50px;
+  height: auto;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about article {
+  width: 40vw;
+  margin: 2em;
+}
